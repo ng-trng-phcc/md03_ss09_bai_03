@@ -13,10 +13,10 @@ import lombok.Setter;
 @AllArgsConstructor
 public class DepartmentDTO {
 
-    @NotBlank(message = "Name is required")
-    @Size(min = 5, max = 50, message = "Name must be between 5 and 50 characters")
+    @NotBlank(message = "Tên phòng ban không được để trống")
+    @Size(min = 5, max = 50, message = "Tên phòng ban phải từ 5-50 ký tự")
     private String name;
 
-    @Size(max = 100, message = "Description must not exceed 100 characters")
+    @Size(max = 100, message = "Mô tả không được vượt quá 100 ký tự")
     private String description;
 }
